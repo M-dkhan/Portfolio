@@ -1,0 +1,127 @@
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60px;
+  width: 150px;
+}
+
+nav {
+  background-color: transparent;
+  /* Set the navbar background to transparent */
+  text-align: center;
+  /* Center the links */
+}
+
+nav ul {
+  list-style-type: none;
+  /* Remove bullets from list items */
+}
+
+nav li {
+  display: inline-block;
+  /* Make the list items inline blocks */
+
+}
+
+nav a {
+  display: block;
+  /* Make the links block level elements to fill the whole list item */
+
+  padding: 10px 20px;
+  /* Add some padding and make it look nice */
+
+  color: #000;
+  /* Text color */
+
+  text-decoration: none;
+  /* Remove underline from links */
+
+}
+
+nav a:hover {
+  /* Change color on hover */
+
+  color: #FFF;
+
+  background-color: #000;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  nav ul li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  nav ul li a {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  nav ul li a.active {
+    background-color: #555;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    background-color: #555;
+    color: white;
+
+    border-bottom: none;
+
+    padding-top: 11px;
+
+    margin-top: -1px;
+
+    transition: all 0.3s ease 0s;
+
+    -webkit-transition: all 0.3s ease 0s;
+
+    -moz-transition: all 0.3s ease 0s;
+
+    -o-transition: all 0.3s ease 0s;
+  }
+}
+
+
+.Navbar__Link-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  padding-top: 35px;
+  padding-right: 10px;
+}
+
+.profile-image {
+  background-color: #ffffff;
+}
+
+.profile-intro {
+  background-color: #c6e3fd;
+  border-radius: 10px;
+
+
+}
+
+.profile-picture {
+  position: relative;
+}
+
+.name-heading {
+  position: absolute;
+  top: -35px;
+  left: 10px;
+}
+
+.skills{
+  background-color: #ffffff;
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+}
