@@ -112,10 +112,11 @@ section {
 /* Style the arrow image */
 .arrow-image {
     position: absolute;
-    bottom: 100px;
+    bottom: 6px;
     right: 20px;
     opacity: 1;
     transition: opacity 0.3s ease;
+    filter: brightness(0) invert(1);
 }
 
 /* Hide the arrow when the overview section is scrolled past */

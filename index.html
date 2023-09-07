@@ -40,13 +40,13 @@
     <nav class="bg-indigo-950 bg-opacity-70 py-6 border-b border-gray-200 border-opacity-25">
         <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
             <!-- Left Side - Your Name -->
-            <div class="text-white text-lg font-bold mb-4 sm:mb-0">
+            <div class="text-white text-lg font-bold mb-4 sm:place-items-start">
                 Mohd Zaid Khan
             </div>
 
             <!-- Center Links with Light Gray Background -->
             <div
-                class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mb-4 sm:mb-0 hidden sm:hidden md:flex lg:flex xl:flex">
+                class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mb-4 sm:mb-0 hidden sm:hidden md:flex lg:flex xl:flex pla place-items-center">
                 <!-- Add hidden sm:hidden md:flex lg:flex xl:flex to hide these links on small screens -->
                 <a href="#"
                     class="text-white hover:text-gray-300 px-2 py-1 rounded-lg bg-gray-600 bg-opacity-50 hover:bg-opacity-100 font-bold">Overview</a>
@@ -62,72 +62,80 @@
 
             <!-- Let's Connect Button -->
             <button id="connectBtn"
-                class="bg-white text-gray-800 py-2 px-4 rounded-md border-2 border-white hover:bg-gray-300 hover:text-black focus:outline-none font-bold">
+                class="bg-white text-gray-800 py-2 px-4 rounded-md border-2 border-white hover:bg-gray-300 hover:text-black focus:outline-none font-bold place-items-end">
                 Start
             </button>
         </div>
     </nav>
 
-    <section class="h-screen relative bg-black-700 text-white text-center flex flex-col justify-center parallax-container">
-        <h1 class="text-2xl md:text-4xl lg:text-6xl font-semibold mx-4 mt-0 md:mt-4 lg:mt-8" id="animated-text"
-            style="line-height: 1.5;">
-        </h1>
-
-        <div class="flex flex-wrap justify-center mt-4 md:mt-8 lg:mt-12 space-x-4 items-center">
-            <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
-                <img src="images/html.png" alt="HTML" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
+    <section class="relative bg-black-700 text-white text-center flex flex-col justify-center parallax-container">
+        <div class="mt-16 mb-16 md:mt-32 md:mb-32 lg:mt-32 lg:mb-32">
+            <h1 class="text-2xl md:text-4xl lg:text-6xl font-semibold mx-4 mt-0 md:mt-4 lg:mt-8" id="animated-text"
+                style="line-height: 1.5;">
+            </h1>
+    
+            <div class="flex flex-wrap justify-center mt-4 md:mt-8 lg:mt-12 space-x-4 items-center">
+                <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
+                    <img src="images/html.png" alt="HTML" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
+                </div>
+                <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
+                    <img src="images/css.png" alt="CSS" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
+                </div>
+                <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
+                    <img src="images/js.png" alt="JavaScript" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
+                </div>
+                <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
+                    <img src="images/php.png" alt="PHP" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
+                </div>
+                <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
+                    <img src="images/laravel.png" alt="Laravel" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
+                </div>
+                <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
+                    <img src="images/react.png" alt="React" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
+                </div>
+                <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
+                    <img src="images/node.png" alt="Node.js" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
+                </div>
+                <!-- Repeat this pattern for other icons -->
             </div>
-            <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
-                <img src="images/css.png" alt="CSS" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
-            </div>
-            <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
-                <img src="images/js.png" alt="JavaScript" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
-            </div>
-            <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
-                <img src="images/php.png" alt="PHP" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
-            </div>
-            <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
-                <img src="images/laravel.png" alt="Laravel" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
-            </div>
-            <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
-                <img src="images/react.png" alt="React" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
-            </div>
-            <div class="rounded-lg p-4 md:p-6 mt-2 md:mt-0 transform hover:scale-110 transition-transform duration-300">
-                <img src="images/node.png" alt="Node.js" class="w-12 h-auto md:w-16 md:h-auto darkened-icon">
-            </div>
-            <!-- Repeat this pattern for other icons -->
+            <img src="images/arrow-down.png" alt="Arrow" class="w-12 h-auto md:w-16 md:h-auto arrow-image">
         </div>
-        <img src="images/arrow-down.png" alt="Arrow" class="w-12 h-auto md:w-16 md:h-auto arrow-image"
-            
-            style="filter: brightness(0) invert(1);">
 
     </section>
 
-    <section class="h-screen bg-gradient-to-r from-indigo-900 via-indigo-950 to-gray-900">
-        <div class="container mx-auto h-full flex items-center">
-            <div class="md:flex-1 text-white text-center">
+    <section class="h-auto md:h-screen bg-gradient-to-r from-indigo-900 via-indigo-950 to-gray-900">
+        <div class="container mx-auto h-full flex flex-col md:flex-row items-center">
+            <!-- Image on top with margin for smaller devices -->
+            <div class="md:hidden text-white text-center p-4 md:p-8">
+                <img src="images/coffee-bg.jpg" alt="Your Name" class="mx-auto w-64 h-64 rounded-full object-cover mb-4 md:mb-0 md:mt-4">
+            </div>
+            <div class="md:flex-1 text-white text-center p-4 md:p-8">
                 <h1 class="text-4xl md:text-6xl font-semibold mb-4">Hello, I'm Mohd Zaid Khan</h1>
-                <p class="text-lg md:text-xl mb-6 mt-16">I'm Mohd Zaid Khan, a full-stack developer. I specialize in crafting web applications and solutions that solve real-world problems. My passion lies in building clean, efficient code and creating seamless user experiences.</p>
-                <div class="flex justify-center space-x-4 items-center mt-16">
+                <p class="text-lg md:text-xl mb-6 mt-4 md:mt-16">I'm Mohd Zaid Khan, a full-stack developer. I specialize in crafting web applications and solutions that solve real-world problems. My passion lies in building clean, efficient code and creating seamless user experiences.</p>
+                <div class="flex flex-row md:flex-row justify-center space-y-0 space-x-4 md:space-y-0 md:space-x-4 items-center mt-8">
+                    <a href="tel:+1234567890" class="text-white hover:text-gray-300">
+                        <i class="fa-solid fa-phone fa-2xl mb-4" style="color: #2a771b;"></i>
+                        <br> <p class="hidden">Phone</p>
+                    </a>
                     <a href="mailto:youremail@example.com" class="text-white hover:text-gray-300">
-                        <i class="fa-solid fa-envelope fa-2xl" style="color: #9b362e;"></i>
-                        <br> Email
+                        <i class="fa-solid fa-envelope fa-2xl mb-4" style="color: #9b362e;"></i>
+                        <br> <p class="hidden">Email</p>
                     </a>
                     <a href="https://www.linkedin.com/in/yourprofile" class="text-white hover:text-gray-300">
-                        <i class="fa-brands fa-linkedin fa-2xl" style="color: #0049c7;"></i>
-                        <br> LinkedIn
+                        <i class="fa-brands fa-linkedin fa-2xl mb-4" style="color: #0049c7;"></i>
+                        <br> <p class="hidden">LinkedIn</p>
                     </a>
-                    <a href="tel:+1234567890" class="text-white hover:text-gray-300">
-                        <i class="fa-solid fa-phone fa-2xl" style="color: #2a771b;"></i>
-                        <br> Phone
-                    </a>
+                    
                 </div>
             </div>
-            <div class="hidden md:block md:flex-1">
-                <img src="images/coffee-bg.jpg" alt="Your Name" class="mx-auto w-64 h-64 rounded-full">
+            <!-- Image on the right with margin for larger devices -->
+            <div class="hidden md:block md:flex-1 mt-8">
+                <img src="images/coffee-bg.jpg" alt="Your Name" class="mx-auto w-64 h-64 rounded-full object-cover">
             </div>
         </div>
     </section>
+    
+    
     
     <script src="app.js"></script>
 </body>
