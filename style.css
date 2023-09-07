@@ -1,0 +1,132 @@
+/* Webkit (Safari and Chrome) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ddd;
+    /* Track color */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #2E2739, #776c94);
+    /* Modern gradient */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg,  #2E2739, #776c94);
+    /* Modern gradient on hover */
+}
+
+/* Firefox */
+scrollbar-color: linear-gradient(135deg, #ffcc29, #ff6666) #ddd;
+/* Modern gradient for Firefox */
+scrollbar-width: thin;
+/* Set scrollbar width to thin */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dark-section {
+    background-color: #333;
+    /* Dark background color */
+    color: #fff;
+    /* Text color */
+    padding: 100px 0;
+    /* Adjust the padding as needed */
+    text-align: center;
+    position: relative;
+    /* Position relative for child elements */
+    overflow: hidden;
+    /* Hide overflowing content */
+}
+
+
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.2em;
+    background-color: white;
+    margin-left: 4px;
+    animation: blink 1s infinite;
+    opacity: 0;
+    /* Add this line */
+    visibility: visible;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.grayscale-filter {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    /* Add a smooth transition */
+}
+
+.grayscale-filter:hover {
+    filter: grayscale(0%);
+}
+
+/* This pseudo-element creates the dark overlay on the sides */
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Adjust the opacity as needed */
+    z-index: -1;
+    /* Place it behind the content */
+}
+
+/* Center the content vertically and horizontally */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Style the arrow image */
+.arrow-image {
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Hide the arrow when the overview section is scrolled past */
+.scrolled-past .arrow-image {
+    opacity: 0;
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    background-image: url(images/sky-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
